@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import "./App.scss";
 import React, { useState } from "react";
-import { isImportEqualsDeclaration } from "typescript";
 
 function App() {
   // // Character Setting
@@ -53,74 +52,74 @@ function App() {
   function numberPlus(type) {
     switch (type) {
       case "body":
-        if (body == 7) setBody(0);
+        if (body === 7) setBody(0);
         else setBody(body + 1);
         break;
       case "hair":
-        if (hair == 15) setHair(0);
+        if (hair === 15) setHair(0);
         else setHair(hair + 1);
         break;
       case "hairColor":
-        if (hairColor == 13) setHairColor(0);
+        if (hairColor === 13) setHairColor(0);
         else setHairColor(hairColor + 1);
         break;
       case "top":
-        if (top == 8) setTop(0);
+        if (top === 8) setTop(0);
         else setTop(top + 1);
         break;
       case "topColor":
-        if (topColor == 9) setTopColor(0);
+        if (topColor === 9) setTopColor(0);
         else setTopColor(topColor + 1);
         break;
       case "bottom":
-        if (bottom == 2) setBottom(0);
+        if (bottom === 2) setBottom(0);
         else setBottom(bottom + 1);
         break;
       case "bottomColor":
-        if (bottomColor == 9) setBottomColor(0);
+        if (bottomColor === 9) setBottomColor(0);
         else setBottomColor(bottomColor + 1);
         break;
       case "special":
-        if (special == 6) setSpecial(0);
+        if (special === 6) setSpecial(0);
         else setSpecial(special + 1);
         break;
       case "specialColor":
-        if (specialColor == 9) setSpecialColor(0);
+        if (specialColor === 9) setSpecialColor(0);
         else setSpecialColor(specialColor + 1);
         break;
       case "shoes":
-        if (shoes == 9) setShoes(0);
+        if (shoes === 9) setShoes(0);
         else setShoes(shoes + 1);
         break;
       case "tile":
-        if (tile == 4) setTile(0);
+        if (tile === 4) setTile(0);
         else setTile(tile + 1);
         break;
       case "earring":
         setMask(0);
-        if (earring == 4) setEarring(0);
+        if (earring === 4) setEarring(0);
         else setEarring(earring + 1);
         break;
       case "glasses":
         setMask(0);
         setGlassessun(0);
-        if (glasses == 10) setGlasses(0);
+        if (glasses === 10) setGlasses(0);
         else setGlasses(glasses + 1);
         break;
       case "glassessun":
         setMask(0);
         setGlasses(0);
-        if (glassessun == 10) setGlassessun(0);
+        if (glassessun === 10) setGlassessun(0);
         else setGlassessun(glassessun + 1);
         break;
       case "hat":
         setMask(0);
-        if (hat == 5) setHat(0);
+        if (hat === 5) setHat(0);
         else setHat(hat + 1);
         break;
       case "mask":
         setHat(0);
-        if (mask == 3) setMask(0);
+        if (mask === 3) setMask(0);
         else setMask(mask + 1);
         break;
       default:
@@ -130,74 +129,74 @@ function App() {
   function numberMinus(type) {
     switch (type) {
       case "body":
-        if (body == 0) setBody(7);
+        if (body === 0) setBody(7);
         else setBody(body - 1);
         break;
       case "hair":
-        if (hair == 0) setHair(15);
+        if (hair === 0) setHair(15);
         else setHair(hair - 1);
         break;
       case "hairColor":
-        if (hairColor == 0) setHairColor(13);
+        if (hairColor === 0) setHairColor(13);
         else setHairColor(hairColor - 1);
         break;
       case "top":
-        if (top == 0) setTop(8);
+        if (top === 0) setTop(8);
         else setTop(top - 1);
         break;
       case "topColor":
-        if (topColor == 0) setTopColor(9);
+        if (topColor === 0) setTopColor(9);
         else setTopColor(topColor - 1);
         break;
       case "bottom":
-        if (bottom == 0) setBottom(2);
+        if (bottom === 0) setBottom(2);
         else setBottom(bottom - 1);
         break;
       case "bottomColor":
-        if (bottomColor == 0) setBottomColor(9);
+        if (bottomColor === 0) setBottomColor(9);
         else setBottomColor(bottomColor - 1);
         break;
       case "special":
-        if (special == 0) setSpecial(6);
+        if (special === 0) setSpecial(6);
         else setSpecial(special - 1);
         break;
       case "specialColor":
-        if (specialColor == 0) setSpecialColor(9);
+        if (specialColor === 0) setSpecialColor(9);
         else setSpecialColor(specialColor - 1);
         break;
       case "shoes":
-        if (shoes == 0) setShoes(9);
+        if (shoes === 0) setShoes(9);
         else setShoes(shoes - 1);
         break;
       case "tile":
-        if (tile == 0) setTile(4);
+        if (tile === 0) setTile(4);
         else setTile(tile - 1);
         break;
       case "earring":
         setMask(0);
-        if (earring == 0) setEarring(4);
+        if (earring === 0) setEarring(4);
         else setEarring(earring - 1);
         break;
       case "glasses":
         setMask(0);
         setGlassessun(0);
-        if (glasses == 0) setGlasses(10);
+        if (glasses === 0) setGlasses(10);
         else setGlasses(glasses - 1);
         break;
       case "glassessun":
         setMask(0);
         setGlasses(0);
-        if (glassessun == 0) setGlassessun(10);
+        if (glassessun === 0) setGlassessun(10);
         else setGlassessun(glassessun - 1);
         break;
       case "hat":
         setMask(0);
-        if (hat == 0) setHat(5);
+        if (hat === 0) setHat(5);
         else setHat(hat - 1);
         break;
       case "mask":
         setHat(0);
-        if (mask == 0) setMask(3);
+        if (mask === 0) setMask(3);
         else setMask(mask - 1);
         break;
       default:
@@ -245,23 +244,23 @@ function App() {
     const hatimg = new Image();
     const maskimg = new Image();
 
-    if (hair !== "bald") {
-      hairimg.src = `/img/hair/${hairType[hair]}/${hairType[hair]}-${("000" + (hairColor + 1)).slice(-3)}.png`;
+    if (hairType[hair] !== "bald") {
+      hairimg.src = `/toy_my_avatar/img/hair/${hairType[hair]}/${hairType[hair]}-${("000" + (hairColor + 1)).slice(-3)}.png`;
     } else {
-      hairimg.src = "/img/hair/bald/bald-001.png";
+      hairimg.src = "/toy_my_avatar/img/hair/bald/bald-001.png";
     }
-    bodyimg.src = `/img/body/body0${body + 1}.png`;
-    tileimg.src = `/img/tile/tile-00${tile + 1}.png`;
-    topimg.src = `/img/clothes/top/${topType[top]}/${topType[top]}-${("000" + (topColor + 1)).slice(-3)}.png`;
-    bottomimg.src = `/img/clothes/bottom/${bottomType[bottom]}/${bottomType[bottom]}-${("000" + (bottomColor + 1)).slice(-3)}.png`;
-    shoesimg.src = `/img/clothes/shoes/shoes-${("000" + (shoes + 1)).slice(-3)}.png`;
-    specialimg.src = `/img/clothes/special/${specialType[special]}/${specialType[special]}-${("000" + (specialColor + 1)).slice(-3)}.png`;
-    beardimg.src = `/img/acc/beard/beard-${("000" + (hairColor + 1)).slice(-3)}.png`;
-    earringimg.src = `/img/acc/earring/earring-${("000" + (earring + 1)).slice(-3)}.png`;
-    glassesimg.src = `/img/acc/glasses/glasses-${("000" + (glasses + 1)).slice(-3)}.png`;
-    glassessunimg.src = `/img/acc/glassessun/glassessun-${("000" + (glassessun + 1)).slice(-3)}.png`;
-    hatimg.src = `/img/acc/hat/hat-${("000" + (hat + 1)).slice(-3)}.png`;
-    maskimg.src = `/img/acc/mask/mask-${("000" + (mask + 1)).slice(-3)}.png`;
+    bodyimg.src = `/toy_my_avatar/img/body/body0${body + 1}.png`;
+    tileimg.src = `/toy_my_avatar/img/tile/tile-00${tile + 1}.png`;
+    topimg.src = `/toy_my_avatar/img/clothes/top/${topType[top]}/${topType[top]}-${("000" + (topColor + 1)).slice(-3)}.png`;
+    bottomimg.src = `/toy_my_avatar/img/clothes/bottom/${bottomType[bottom]}/${bottomType[bottom]}-${("000" + (bottomColor + 1)).slice(-3)}.png`;
+    shoesimg.src = `/toy_my_avatar/img/clothes/shoes/shoes-${("000" + (shoes + 1)).slice(-3)}.png`;
+    specialimg.src = `/toy_my_avatar/img/clothes/special/${specialType[special]}/${specialType[special]}-${("000" + (specialColor + 1)).slice(-3)}.png`;
+    beardimg.src = `/toy_my_avatar/img/acc/beard/beard-${("000" + (hairColor + 1)).slice(-3)}.png`;
+    earringimg.src = `/toy_my_avatar/img/acc/earring/earring-${("000" + (earring + 1)).slice(-3)}.png`;
+    glassesimg.src = `/toy_my_avatar/img/acc/glasses/glasses-${("000" + (glasses + 1)).slice(-3)}.png`;
+    glassessunimg.src = `/toy_my_avatar/img/acc/glassessun/glassessun-${("000" + (glassessun + 1)).slice(-3)}.png`;
+    hatimg.src = `/toy_my_avatar/img/acc/hat/hat-${("000" + (hat + 1)).slice(-3)}.png`;
+    maskimg.src = `/toy_my_avatar/img/acc/mask/mask-${("000" + (mask + 1)).slice(-3)}.png`;
 
     function draw() {
       ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
@@ -288,7 +287,7 @@ function App() {
     bodyimg.onload = draw;
     hairimg.onload = draw;
     shoesimg.onload = draw;
-    if (clothe == "normal") {
+    if (clothe === "normal") {
       topimg.onload = draw;
       bottomimg.onload = draw;
     } else {
@@ -372,7 +371,7 @@ function App() {
                     </button>
                   </div>
                 </div>
-                {hair == 0 ? (
+                {hair === 0 ? (
                   <></>
                 ) : (
                   <div className="hair_color_btn">
@@ -461,7 +460,7 @@ function App() {
                         </button>
                       </div>
                     </div>
-                    {special == 0 ? (
+                    {special === 0 ? (
                       <div className="special_color_btn">
                         <p>한벌옷 색</p>
                         <div className="clothe_special_color_btn_wrap">
