@@ -206,9 +206,15 @@ function App() {
   function beardCheck(e) {
     setBeard(e.target.checked);
   }
+  function beardSetting() {
+    const checkboxTarget = document.getElementById("beard");
+    checkboxTarget.checked = beard;
+  }
 
   useEffect(() => {
     if (type !== clothe) setClothe("normal");
+
+    if (type === "hair") beardSetting();
   }, [type]);
 
   useEffect(() => {
